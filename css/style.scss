@@ -65,7 +65,7 @@ a.btn-primary, button.btn-primary, input.btn-primary, .btn-primary a, div.btn-pr
 	@extend .btn;
 	border:1px solid $water;
 	background:$water;
-    color:$white;
+    color:$white !important;
 
 	&:hover{
 		background:$deepwater;
@@ -190,6 +190,7 @@ hr{ max-width:100px; margin:1em auto; border-top:2px solid $fire; }
 	color:$flint;
 
 	h3{ color:$fire; }
+	a{ color:$fire; }
 }
 .about{
 	//padding:0 80px;

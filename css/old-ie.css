@@ -6037,7 +6037,7 @@ ul {
 a.btn-primary, button.btn-primary, input.btn-primary, .btn-primary a, div.btn-primary {
   border: 1px solid #275ea9;
   background: #275ea9;
-  color: #ffffff; }
+  color: #ffffff !important; }
   a.btn-primary:hover, button.btn-primary:hover, input.btn-primary:hover, .btn-primary a:hover, div.btn-primary:hover {
     background: #024582;
     border-color: #024582; }
@@ -6148,6 +6148,8 @@ hr {
   background: #F5F5F5;
   color: #4C4C4C; }
   .about-container h3 {
+    color: #FF512F; }
+  .about-container a {
     color: #FF512F; }
 
 .about-intro, .about-title, .about-outro {
