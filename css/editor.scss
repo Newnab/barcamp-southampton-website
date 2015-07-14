@@ -1,0 +1,18 @@
+@import "variables";
+
+body {
+    @extend %base;
+    @import "shared";
+}
+
+body.mce-content-body {
+    @extend %base;
+}
+
+$rte-styles: h2, h3, p;
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
+
+@each $item in $rte-styles {
+    #{$item} { /* */ }
+}

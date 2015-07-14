@@ -1,0 +1,90 @@
+# Global Ignore file, sources of inspiration include;
+#   http://blogs.planetcloud.co.uk/mygreatdiscovery/post/Mercurial-ignore-file.aspx
+#   http://stackoverflow.com/questions/34784/mercurial-setup-for-visual-studio-2008-projects
+#   http://offroadcode.com/blog/2012/4/5/mercurial-ignore-file-for-umbraco/
+
+# use glob syntax
+syntax: glob
+
+# General noise
+Thumbs.db
+*.DS_Store
+*.orig
+aspnet_client/
+*.orig
+*/Thumbs.db
+*/log.txt
+packages/**/*
+
+# Frontend noise
+**/node_modules/
+**/node_modules/*
+**/.sass-cache/
+**/.sass-cache/*
+
+# Dll's and related C# crud
+*/bin/Debug/*
+*/obj/Debug/*
+*/obj/*
+*.pdb
+*.user
+*.DS_Store
+
+# Visual Studio goodies taken from (http://stackoverflow.com/questions/4095696/mercurial-hgignore-for-visual-studio-2010-projects)
+*.obj
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.scc
+[Bb]in
+[Dd]ebug*/
+obj/
+[Rr]elease*/
+_ReSharper*/
+*_ReSharper*
+[Tt]humbs.db
+[Tt]est[Rr]esult*
+[Bb]uild[Ll]og.*
+*.[Pp]ublish.xml
+*.resharper
+ASPNETDB.MDF
+aspnetdb_log.ldf
+
+# Umbraco stuff
+*/App_Data/umbraco.config
+*/App_Data/mediaaccess.config
+*/App_Data/ClientDependency/
+*/App_Data/ExamineIndexes/
+*/App_Data/preview/
+*/App_Data/TEMP/
+*/App_Data/NuGetBackup/
+*/App_Data/Logs/UmbracoTraceLog.txt*
+*/App_Data/umbraco.licensing.log.txt
+*/App_Data/access.config
+*/App_Data/cache/
+*/media/**/*
+*/Config/splashes/*
+*/_systemUmbracoIndexDontDelete/*
+*/uSync.Archive/*
+*/umbraco_client/*
+*/umbraco/*
+*/App_Browsers/*
+*/config/splashes/*
+*/App_Plugins/Archetype/*
+*/App_Data/[a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9]-[a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9]-[a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9]-[a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9]-[a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9]
+*/install/

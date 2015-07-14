@@ -1,0 +1,86 @@
+//@import "retina-sprites";
+@import "util"; // Non-project specific mixins/placeholders/variables. Do not edit.
+
+// Set variables and spriting specific to this project.
+// Variables
+$vertical-space: 20px;
+$horizontal-space: 24px; //Also used for gutters if grid enabled
+$content-width: 90%; //Page width
+$max-content-width: 1200px; //Maximum width before it just ends up centered (Containers will extend by default)
+$border-radius: 4px;
+$transition-speed: 0.1s;
+
+// Uncomment this if your site isn't responsive. Enjoy your trip to the past!
+//$mq-responsive: false;
+
+// Responsive breakpoints, use semantic names
+$mq-breakpoints: (
+    XS:  320px,
+	S: 480px,
+	M: 720px,
+	L: 980px,
+	XL: 1024px,
+	XXL: 1280px
+);
+
+// Define the breakpoint from the $mq-breakpoints list that IE8 should get
+$mq-static-breakpoint: XL;
+
+// If you want to display the currently active breakpoint in the top
+// right corner of your site during development, add the breakpoints
+// to this list, ordered by width, e.g. (mobile, tablet, desktop).
+$mq-show-breakpoints: () !default;
+
+
+// Common Colours
+$fire: #FF512F;
+$spark: #F09819;
+$water: #275ea9;
+$deepwater:#024582;
+$white: #ffffff;
+$flint: #4C4C4C;
+$elephant:#F5F5F5;
+
+// e.g Link colour, bg, text colour, hover colour, active colour
+$body-background-color:$fire;
+$default-text-color: $white;
+$secondary-text-color: $spark;
+$primary-highlight-color: $water;
+$secondary-highlight-color: $fire;
+$default-link-color: $white;
+$hover-link-color: $spark;
+
+// Fonts
+// Common font stacks should be defined in util.scss, specific ones can be named or referenced here
+$base-font: 'Roboto', sans-serif;
+$heading-font: 'Pacifico', cursive;
+$base-font-size:18px;
+$base-font-lh:1.4em;
+
+%base{
+    font-size: $base-font-size;
+    line-height: $base-font-lh;
+    font-family: $base-font;
+    background-color: $body-background-color;
+    color: $default-text-color;
+}
+
+%inner{
+	padding-top:$vertical-space/2;
+	padding-bottom:$vertical-space/2;
+	padding-left:$horizontal-space/2;
+	padding-right:$horizontal-space/2;
+	
+	@include respond-to(medium-screens){
+		padding-top:$vertical-space/1.5;
+		padding-bottom:$vertical-space/1.5;
+		padding-left:$horizontal-space/1.5;
+		padding-right:$horizontal-space/1.5;
+	}
+	@include respond-to(larger-screens){
+		padding-top:$vertical-space;
+		padding-bottom:$vertical-space;
+		padding-left:$horizontal-space;
+		padding-right:$horizontal-space;
+	}
+}

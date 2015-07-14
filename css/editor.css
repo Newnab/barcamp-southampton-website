@@ -1,0 +1,138 @@
+/* //////////////////////////////////// Font stacks */
+/* //////////////////////////////////// Mixins */
+/*
+.logo {
+  background: url("logo.png") no-repeat;
+  @include image-2x("logo-2x.png", 100px, 25px);
+}
+.thing-that-uses-sprite{
+	@include png-sprite(filename-without-png);
+	@include image-2x("sprite-2x.png", spritewidth-px, spriteheight-px);
+}
+*/
+/*
+.awesome-div {
+  float: left;
+  width: 250px;
+  @include respond-to(ipad) { width: 100% ;}
+  @include respond-to(old-ie) { width: 125px; }
+  @include respond-to(retina) { float: none; }
+}
+*/
+.hide {
+  display: none; }
+
+.hidden {
+  visibility: hidden; }
+
+.clear {
+  clear: both; }
+
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden; }
+.clearfix:after {
+  clear: both; }
+.clearfix {
+  *zoom: 1; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.unbutton {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+body, body.mce-content-body {
+  font-size: 18px;
+  line-height: 1.4em;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FF512F;
+  color: #ffffff; }
+
+body {
+  /* //////////////////////////////////// Font stacks */
+  /* //////////////////////////////////// Mixins */
+  /*
+.logo {
+  background: url("logo.png") no-repeat;
+  @include image-2x("logo-2x.png", 100px, 25px);
+}
+.thing-that-uses-sprite{
+	@include png-sprite(filename-without-png);
+	@include image-2x("sprite-2x.png", spritewidth-px, spriteheight-px);
+}
+*/
+  /*
+.awesome-div {
+  float: left;
+  width: 250px;
+  @include respond-to(ipad) { width: 100% ;}
+  @include respond-to(old-ie) { width: 125px; }
+  @include respond-to(retina) { float: none; }
+}
+*/ }
+  body .hide {
+    display: none; }
+  body .hidden {
+    visibility: hidden; }
+  body .clear {
+    clear: both; }
+  body .clearfix:before, body .clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  body .clearfix:after {
+    clear: both; }
+  body .clearfix {
+    *zoom: 1; }
+  body .left {
+    float: left; }
+  body .right {
+    float: right; }
+  body .unbutton {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    border: 0; }
+  body body, body body.mce-content-body {
+    font-size: 18px;
+    line-height: 1.4em;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FF512F;
+    color: #ffffff; }
+  body img {
+    margin-bottom: 1em; }
+  body img[style*="float: left"] {
+    margin: 0 1em 1em 0;
+    max-width: 40%;
+    height: auto !important; }
+  body img[style*="float: right"] {
+    margin: 0 0 1em 1em;
+    max-width: 40%;
+    height: auto !important; }
+  body img[style*="margin-left: auto"] {
+    margin-bottom: 1em;
+    max-width: 100%;
+    width: auto !important;
+    height: auto !important; }
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
+h2 {
+  /* */ }
+
+h3 {
+  /* */ }
+
+p {
+  /* */ }
+
+/*# sourceMappingURL=editor.css.map */

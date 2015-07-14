@@ -1,0 +1,46 @@
+//Responsive table handler
+@media all and (max-width: 720px){
+	table,
+	tbody,
+	thead,
+	tr,
+	td,
+	td:before{
+		display:block;	/* Converts a table, table row, table column and table column:before into a block element */
+	}
+	table{
+		border-bottom:none !important;
+		border-top:none !important;
+	}
+	.table-label{
+		position:absolute;	/* Hides table head but not using display none */
+		top:-1000em;
+		left:-1000em;
+	}
+	tr{
+		border-bottom:1px solid #eeeeee;
+	}
+	tr:nth-child(odd){
+		background:#eeeeee;
+	}
+	tr td:nth-child(1){ /* first column of the row */
+		border-left:none;
+	}
+	tr td:last-child{ /* last column of the row */
+		border-right:none;
+	}
+	tr:last-child td,
+	td{ /* Column in the last row and column */
+		border-right:none !important;
+		border-bottom:none !important;
+	}
+	td:before{ /* prints the value of data-label attribute before the column data */
+		font-weight:bold;
+		padding-right:20px;
+		font-size:14px;
+        line-height:22px;
+		content:attr(data-label);
+        position:relative;
+        top:-4px;
+	}
+}
